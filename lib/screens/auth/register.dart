@@ -278,10 +278,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           ),
                         ),
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(
+                          backgroundColor: WidgetStateProperty.all(
                             WooAppTheme.colorAuthActionBackground,
                           ),
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(36.0),
                               side: BorderSide(
@@ -340,7 +340,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       _showResult(tr('congratulations'), tr('sign_up_success'));
     }).catchError((error) {
       _onFinalizeLoading();
-      if (error is DioError) {
+      if (error is DioException) {
         var reg = WpRegResponse.fromJson(error.response!.data);
         _showResult(tr('error'), reg.message);
       }

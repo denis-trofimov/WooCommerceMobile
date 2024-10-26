@@ -181,10 +181,10 @@ class _AddToCartBottomBarState extends State<AddToCartBottomBar> {
         )
     ),
     style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(
+      backgroundColor: WidgetStateProperty.all(
         WooAppTheme.colorPrimaryBackground,
       ),
-      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
         RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(36.0),
           side: BorderSide(
@@ -239,10 +239,10 @@ class _AddToCartBottomBarState extends State<AddToCartBottomBar> {
           ),
         ),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(
             WooAppTheme.colorPrimaryBackground,
           ),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(36.0),
               side: BorderSide(

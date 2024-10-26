@@ -1,6 +1,4 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:wooapp/config/theme.dart';
 import 'package:wooapp/extensions/extensions_product.dart';
 

@@ -1,9 +1,5 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:page_view_indicators/circle_page_indicator.dart';
-import 'package:shimmer_animation/shimmer_animation.dart';
 import 'package:wooapp/config/theme.dart';
 import 'package:wooapp/core/pop_controller.dart';
 import 'package:wooapp/extensions/extensions_context.dart';
@@ -18,8 +14,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wooapp/widget/widget_add_to_cart.dart';
 import 'package:wooapp/widget/widget_attributes.dart';
 import 'package:wooapp/widget/widget_catalog_products.dart';
-import 'package:wooapp/widget/widget_price_product.dart';
-import 'package:wooapp/widget/widget_product_actions.dart';
 import 'package:wooapp/widget/widget_product_feed.dart';
 import 'package:wooapp/widget/widget_product_info.dart';
 import 'package:wooapp/widget/widget_error_state.dart';

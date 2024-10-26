@@ -70,10 +70,10 @@ class EmptyCartWidget extends StatelessWidget {
           ),
         ),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(
             WooAppTheme.colorSecondaryBackground,
           ),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(36.0),
               side: BorderSide(

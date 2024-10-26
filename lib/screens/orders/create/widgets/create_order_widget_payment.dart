@@ -34,7 +34,7 @@ class CreateOrderPaymentWidget extends StatelessWidget {
                 children: [
                   Checkbox(
                     checkColor: WooAppTheme.colorPrimaryForeground,
-                    fillColor: MaterialStateProperty.all(
+                    fillColor: WidgetStateProperty.all(
                       WooAppTheme.colorPrimaryBackground,
                     ),
                     value: isSelected,

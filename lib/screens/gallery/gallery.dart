@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:photo_view/photo_view.dart';
@@ -37,7 +36,6 @@ class _GalleryScreenState extends State<GalleryScreen> {
     appBar: AppBar(
       elevation: 0,
       backgroundColor: Colors.black,
-      brightness: Brightness.dark,
       actions: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
@@ -48,7 +46,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
             )
           ),
         )
-      ],
+      ], systemOverlayStyle: SystemUiOverlayStyle.light,
     ),
     body: SafeArea(
       child: Container(

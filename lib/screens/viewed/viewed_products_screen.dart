@@ -7,7 +7,6 @@ import 'package:wooapp/screens/viewed/viewed_products_cubit.dart';
 import 'package:wooapp/screens/viewed/viewed_products_state.dart';
 import 'package:wooapp/widget/stateful_wrapper.dart';
 import 'package:wooapp/widget/widget_product_grid_slider.dart';
-import 'package:wooapp/widget/widget_product_recent.dart';
 import 'package:wooapp/widget/widget_woo_section.dart';
 
 class ViewedProductsScreen extends StatelessWidget {

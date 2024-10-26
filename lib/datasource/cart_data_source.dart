@@ -119,9 +119,7 @@ Map<String, String> mapVariations(List<Variation> variations, Map<String, String
   Map<String, String> result = {};
   for (var key in input.keys) {
     Variation? variation = variations.firstWhere((v) => v.name == key, orElse: null);
-    if (variation == null) continue;
     Term? term = variation.terms.firstWhere((t) => t.name == input[key], orElse: null);
-    if (term == null) continue;
     result.addAll({
       'attribute_${variation.slug}': '${term.slug}',
     });

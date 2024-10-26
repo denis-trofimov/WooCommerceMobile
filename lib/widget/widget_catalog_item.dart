@@ -96,7 +96,7 @@ class _CatalogItemWidgetState extends State<CatalogItemWidget> {
                       Spacer(),
                       TextButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(
+                          backgroundColor: WidgetStateProperty.all(
                             Color(0x0),
                           ),
                         ),

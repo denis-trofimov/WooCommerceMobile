@@ -1,7 +1,5 @@
 import 'package:wooapp/database/entity/filter.dart';
-import 'package:wooapp/model/attribute.dart';
 
-import 'category_filter_model.dart';
 
 abstract class CategoryFilterState {}
 

@@ -48,7 +48,7 @@ class _ExpandableTextState extends State<ExpandableText> {
                   Container(
                     child: TextButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Color(0xD000000)),
+                        backgroundColor: WidgetStateProperty.all(Color(0xD000000)),
                       ),
                       onPressed: () {
                         setState(() {

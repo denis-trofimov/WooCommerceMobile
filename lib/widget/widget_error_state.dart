@@ -70,8 +70,8 @@ class WooErrorStateWidget extends StatelessWidget {
               ],
             )),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Color(0xFFDADADA)),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          backgroundColor: WidgetStateProperty.all(Color(0xFFDADADA)),
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(36.0),
               side: BorderSide(

@@ -213,7 +213,7 @@ class CreateOrderView extends StatelessWidget {
                 tr('create_order_person'),
                 end: TextButton(
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Color(0xD000000))
+                      backgroundColor: WidgetStateProperty.all(Color(0xD000000))
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -286,7 +286,7 @@ class CreateOrderView extends StatelessWidget {
                 tr('create_order_shipping'),
                 end: TextButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Color(0xD000000))
+                    backgroundColor: WidgetStateProperty.all(Color(0xD000000))
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -413,7 +413,7 @@ class CreateOrderView extends StatelessWidget {
                         padding: EdgeInsets.only(left: 8, right: 4),
                         child: Checkbox(
                           checkColor: WooAppTheme.colorPrimaryForeground,
-                          fillColor: MaterialStateProperty.all(
+                          fillColor: WidgetStateProperty.all(
                             WooAppTheme.colorPrimaryBackground,
                           ),
                           value: state.termsAccepted,
@@ -472,10 +472,10 @@ class CreateOrderView extends StatelessWidget {
                     ),
                   ),
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(
+                    backgroundColor: WidgetStateProperty.all(
                       WooAppTheme.colorPrimaryBackground,
                     ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(36.0),
                         side: BorderSide(

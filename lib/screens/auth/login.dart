@@ -204,10 +204,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
+                        backgroundColor: WidgetStateProperty.all(
                           WooAppTheme.colorAuthActionBackground,
                         ),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(36.0),
                             side: BorderSide(
@@ -268,7 +268,7 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.pop(context, true);
     }).catchError((error) {
       _onFinalizeLoading();
-      if (error is DioError) {
+      if (error is DioException) {
         var message = error.response!.data['message'];
         _showResult(tr('error'), message);
       }
